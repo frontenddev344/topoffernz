@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <title>Casinos</title>
+</head>
+
+<body>
+  <!-- site-header start -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-logo">
+        <a href="index.html"><img src="images/headerlogo-white.png" alt="site-logo"></a>
+      </div>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="restaurants.html">Restaurants </a></li>
+          <li><a href="casinos.html" class="menu active">Casinos</a></li>
+          <li class="closed-menu">
+            <a href="#">×</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+    </div>
+  </header>
+  <!-- site header end -->
+
+  <!-- site banner start -->
+  <section class="casinosbanner banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="bannertitle">
+            <h1>
+              Casinos
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- site banner end -->
+
+  <!-- site toptext start -->
+  <section class="toptext">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="topetext-para">
+            <p>Calling all Kiwi thrill-seekers and gaming enthusiasts! Las Vegas casino resorts are more than just
+              places to test your luck; they are extravagant destinations offering an unparalleled blend of gaming
+              excitement, entertainment, and luxury. Place your bets, and soak in the electrifying atmosphere of these
+              iconic casino resorts in the heart of the Las Vegas Strip!</p>
+            <p>Las Vegas is the ultimate entertainment capital, known best for its world-famous casino resorts. Get
+              ready to experience the excitement, luxury, and non-stop action of the Las Vegas Strip. Here's a guide to
+              the best casino resorts, ensuring an unforgettable stay for New Zealand travellers: </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- site toptext start -->
+
+  <!-- site casinoacard start -->
+
+  <!-- site casinoacard end -->
+
+  <!-- site footer start -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="footer-logo">
+            <a href="index.html"><img src="images/headerlogo-white.png" alt="footer-logo" class="img-fluid"></a>
+          </div>
+          <div class="social-signals">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="footer-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="hotels.html">Hotels</a></li>
+              <li><a href="restaurants.html">Restaurants </a></li>
+              <li><a href="casinos.html">Casinos</a></li>
+              <li><a href="contact.html">Contact </a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms-conditons.html">Terms and Conditions </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="footer-adresse">
+            <h3>Contact</h3>
+            <div class="footer-mails">
+              <div class="mails-names">
+                <i class="fa-solid fa-envelope" style="color: #C09A76;"></i>
+                <a href="mailto:">info@topoffernz.com </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- site footer end -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/owl.carousel.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".menu-toggle").click(function () {
+        $("body").addClass("toggle");
+      });
+    });
+
+    $(document).ready(function () {
+      $(".closed-menu").click(function () {
+        $("body").removeClass("toggle");
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var header = $("header");
+        header.toggleClass("sticky", $(window).scrollTop() > 0);
+      });
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
