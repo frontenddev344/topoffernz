@@ -82,7 +82,7 @@ header.site-header.sticky {
 
 .site-logo img {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
 }
 
 .site-nav a {
@@ -150,6 +150,7 @@ section.homebanner.banner {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .toptext {
@@ -211,8 +212,8 @@ section.link {
     }
 
     &-text {
-        margin: -165px 20px 90px;
         padding: 20px 20px 30px 20px;
+        margin-bottom: 25px;
         background-color: rgb(193 157 96 / 88%) !important;
         border: 1px solid #c19d60a8;
         border-radius: 0;
@@ -236,21 +237,22 @@ section.link {
             display: inline-block;
             height: auto;
             padding: 12px 25px;
-            border: 1px solid $clr-white;
+            border: 1px solid $clr-black;
             border-radius: 0;
-            background-color: transparent;
+            background-color: black;
             -webkit-transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
             transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
             color: $clr-white;
             line-height: 20px;
-            font-weight: 400;
+            font-weight: 500 !important;
             text-align: center;
             text-transform: capitalize;
             font-size: 14px;
 
             &:hover {
-                background: $clr-black;
+                background: transparent;
                 border: 1px solid $clr-black;
+                color: $clr-black;
             }
         }
     }
@@ -271,6 +273,7 @@ section.link {
     }
 }
 
+/*links-css-end*/
 /*home-css-end*/
 
 /*hotels-css-start*/
@@ -289,7 +292,74 @@ section.hotelbanner.banner {
     }
 }
 
+.hotel {
+    &content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+
+        p {
+            max-width: 70%;
+        }
+    }
+
+    &picture {
+        img {
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+}
+
+.hotelmain {
+    padding: 30px 0;
+
+    h2 {
+        color: $clr-black;
+        margin-bottom: 25px;
+    }
+}
+
 /*hotel-css-end*/
+
+/*restaurent-css-start*/
+section.restaurantsbanner.banner {
+    background-image: url(../images/restaurentbanner.jpeg);
+    position: relative;
+    height: 450px;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: -1;
+    }
+}
+
+/*restaurent-css-end*/
+
+/*casino-css-start*/
+section.casinosbanner.banner {
+    background-image: url(../images/casinobanner.jpg);
+    position: relative;
+    height: 450px;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: -1;
+    }
+}
+
+/*casino-css-end*/
 
 /*footer-css-start*/
 .footer {
@@ -297,7 +367,7 @@ section.hotelbanner.banner {
     padding: 50px 0;
 
     &-logo {
-        max-width: 250px;
+        max-width: 200px;
     }
 
     &-links {

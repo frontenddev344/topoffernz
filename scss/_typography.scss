@@ -41,19 +41,24 @@ h2 {
     position: relative;
     color: $clr-mustard;
 
+    @include mq(md) {
+        font-size: 28px;
+        line-height: normal;
+    }
+
     &::after {
         content: "";
         position: absolute;
         background-color: #ac8a63;
         height: 3px;
-        width: 10%;
+        width: 25%;
         bottom: -10px;
         left: 0;
     }
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 24px;
     color: $clr-mustard;
     font-weight: 400;
     font-family: "Lora", serif;

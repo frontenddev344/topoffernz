@@ -40,18 +40,24 @@ h2 {
   position: relative;
   color: #ac8a63;
 }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+    line-height: normal;
+  }
+}
 h2::after {
   content: "";
   position: absolute;
   background-color: #ac8a63;
   height: 3px;
-  width: 10%;
+  width: 25%;
   bottom: -10px;
   left: 0;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 24px;
   color: #ac8a63;
   font-weight: 400;
   font-family: "Lora", serif;
@@ -141,7 +147,7 @@ header.site-header.sticky {
 
 .site-logo img {
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .site-nav a {
@@ -203,6 +209,7 @@ section.homebanner.banner::after {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .toptext {
@@ -256,8 +263,8 @@ section.link {
   color: #0C0B0B;
 }
 .link-text {
-  margin: -165px 20px 90px;
   padding: 20px 20px 30px 20px;
+  margin-bottom: 25px;
   background-color: rgba(193, 157, 96, 0.88) !important;
   border: 1px solid rgba(193, 157, 96, 0.6588235294);
   border-radius: 0;
@@ -277,21 +284,22 @@ section.link {
   display: inline-block;
   height: auto;
   padding: 12px 25px;
-  border: 1px solid #fff;
+  border: 1px solid #0C0B0B;
   border-radius: 0;
-  background-color: transparent;
+  background-color: black;
   -webkit-transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
   transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
   color: #fff;
   line-height: 20px;
-  font-weight: 400;
+  font-weight: 500 !important;
   text-align: center;
   text-transform: capitalize;
   font-size: 14px;
 }
 .link-btn a:hover {
-  background: #0C0B0B;
+  background: transparent;
   border: 1px solid #0C0B0B;
+  color: #0C0B0B;
 }
 .link-picture {
   overflow: hidden;
@@ -306,6 +314,7 @@ section.link {
   filter: brightness(100%);
 }
 
+/*links-css-end*/
 /*home-css-end*/
 /*hotels-css-start*/
 section.hotelbanner.banner {
@@ -322,14 +331,70 @@ section.hotelbanner.banner::after {
   z-index: -1;
 }
 
+.hotelcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+.hotelcontent p {
+  max-width: 70%;
+}
+.hotelpicture img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.hotelmain {
+  padding: 30px 0;
+}
+.hotelmain h2 {
+  color: #0C0B0B;
+  margin-bottom: 25px;
+}
+
 /*hotel-css-end*/
+/*restaurent-css-start*/
+section.restaurantsbanner.banner {
+  background-image: url(../images/restaurentbanner.jpeg);
+  position: relative;
+  height: 450px;
+  z-index: 2;
+}
+section.restaurantsbanner.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*restaurent-css-end*/
+/*casino-css-start*/
+section.casinosbanner.banner {
+  background-image: url(../images/casinobanner.jpg);
+  position: relative;
+  height: 450px;
+  z-index: 2;
+}
+section.casinosbanner.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*casino-css-end*/
 /*footer-css-start*/
 .footer {
   background-color: #0C0B0B;
   padding: 50px 0;
 }
 .footer-logo {
-  max-width: 250px;
+  max-width: 200px;
 }
 .footer-links a {
   color: #fff;
