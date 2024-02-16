@@ -25,6 +25,7 @@ h1 {
     line-height: normal;
     color: $clr-white;
     font-family: "Lora", serif;
+    text-transform: capitalize;
 
     @include mq(md) {
         font-size: 35px;
@@ -33,10 +34,22 @@ h1 {
 }
 
 h2 {
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 40px;
+    line-height: 45px;
     font-weight: 500;
     font-family: "Lora", serif;
+    position: relative;
+    color: $clr-mustard;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: #ac8a63;
+        height: 3px;
+        width: 16%;
+        bottom: -10px;
+        left: 0;
+    }
 }
 
 h3 {
