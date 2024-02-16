@@ -45,7 +45,7 @@ h2::after {
   position: absolute;
   background-color: #ac8a63;
   height: 3px;
-  width: 16%;
+  width: 10%;
   bottom: -10px;
   left: 0;
 }
@@ -205,7 +205,7 @@ section.homebanner.banner::after {
   transform: translate(-50%, -50%);
 }
 
-section.toptext {
+.toptext {
   padding: 30px 0;
 }
 
@@ -213,6 +213,9 @@ section.toptext {
 /*home-css-start*/
 .beforego {
   padding: 30px 0;
+}
+.beforego h2 {
+  color: #0C0B0B;
 }
 .beforego-content {
   background: #0C0B0B;
@@ -241,25 +244,31 @@ section.toptext {
 
 /*links-css-start*/
 section.link {
-  background: #0C0B0B;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 
 .link .row {
   row-gap: 40px;
 }
 
+.link h2 {
+  margin-bottom: 40px;
+  color: #0C0B0B;
+}
 .link-text {
   margin: -165px 20px 90px;
   padding: 20px 20px 30px 20px;
-  background-color: rgba(193, 157, 96, 0.6588235294) !important;
+  background-color: rgba(193, 157, 96, 0.88) !important;
   border: 1px solid rgba(193, 157, 96, 0.6588235294);
   border-radius: 0;
   overflow: hidden;
   transition: 0.2s cubic-bezier(0.3, 0.58, 0.55, 1);
-  bottom: -90px;
   position: relative;
   transition: 0.3s;
+}
+.link-text h4 {
+  color: #0C0B0B;
+  font-weight: 500;
 }
 .link-text:hover {
   transform: translateY(-20px);
@@ -298,6 +307,22 @@ section.link {
 }
 
 /*home-css-end*/
+/*hotels-css-start*/
+section.hotelbanner.banner {
+  background-image: url(../images/hotelbanner.webp);
+  position: relative;
+  height: 450px;
+  z-index: 2;
+}
+section.hotelbanner.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*hotel-css-end*/
 /*footer-css-start*/
 .footer {
   background-color: #0C0B0B;
