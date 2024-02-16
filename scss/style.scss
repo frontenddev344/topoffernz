@@ -359,6 +359,231 @@ section.casinosbanner.banner {
     }
 }
 
+section.Page2 {
+    padding-bottom: 0;
+
+    .page-wrapper {
+
+        .row {
+
+            .col-sm-12.col-lg-4.col-md-6:nth-child(4),
+            .col-sm-12.col-lg-4.col-md-6:nth-child(5),
+            .col-sm-12.col-lg-4.col-md-6:nth-child(6),
+            .col-sm-12.col-lg-4.col-md-6:nth-child(7),
+            .col-sm-12.col-lg-4.col-md-6:nth-child(8),
+            .col-sm-12.col-lg-4.col-md-6:last-child {
+                margin-top: 16px;
+            }
+        }
+
+
+
+        .boxs {
+            height: 100%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background: $clr-white;
+            position: relative;
+            padding-bottom: 60px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-6px);
+            }
+
+            figure.imgfigure {
+                position: relative;
+
+                img {
+                    height: 274px;
+                    object-fit: cover;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: #c6ab728f;
+                    transform: scale(0);
+                    transition: all .5s;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover::after {
+                    transform: scale(1);
+                }
+            }
+
+            .page-content-box {
+                padding: 0px 14px 20px;
+
+
+                h3 {
+                    color: $clr-mustard;
+                    font-weight: 700;
+                    font-size: 22px;
+                    letter-spacing: 3px;
+                    line-height: 26px;
+                }
+
+                h6 {
+                    font-size: 20px !important;
+                    color: $clr-mustard;
+                    margin-bottom: 14px;
+
+                    span {
+                        color: $clr-black;
+                    }
+                }
+
+                .page-btn {
+                    position: absolute;
+                    bottom: 10px;
+
+                    a {
+                        display: inline-block;
+                        margin: 10px;
+                        background: $clr-mustard;
+                        color: $clr-white;
+                        padding: 10px 40px;
+                        font-family: 'Montserrat';
+                        font-size: 16px;
+                        border-radius: 6px;
+                        border: 1px solid $clr-mustard;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: transparent;
+                            border: 1px solid $clr-mustard;
+                            color: $clr-mustard ;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.facilities-area .section-title {
+    margin-bottom: 51px;
+}
+
+.facilities-area .luxury-button {
+    text-align: right;
+    margin-top: 0;
+}
+
+.facilities-area .luxury-button:before {
+    right: -295px;
+    background: $clr-black;
+}
+
+.facilities-area .luxury-button a {
+    color: $clr-black;
+    border: 1px solid $clr-black;
+    background: transparent;
+}
+
+.facilities-area .luxury-button a:before {
+    background: $clr-black;
+}
+
+.facilities-area .luxury-button a:hover {
+    color: $clr-white;
+}
+
+.facilities-area .row.add-boder {
+    border-top: 1px solid $clr-mustard;
+    padding: 39px 0;
+
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+.single-facilities-box {
+    position: relative;
+    margin-left: 100px;
+}
+
+.single-facilities-box.two {
+    margin: 0;
+    margin-right: 100px;
+}
+
+.facilities-content {
+    h4 {
+        font-size: 24px;
+        line-height: 35px;
+        color: $clr-black;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-size: 22px;
+        line-height: 26px;
+        color: $clr-mustard;
+        font-weight: 600;
+        font-family: 'Lora';
+    }
+
+    p {
+        position: relative;
+    }
+
+}
+
+a.facilities-button i {
+    display: inline-block;
+    color: $clr-black;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+img.rightarrow {
+    width: 40px;
+    transition: .3s;
+
+    &:hover {
+        filter: invert(79%) sepia(30%) saturate(531%) hue-rotate(351deg) brightness(78%) contrast(92%);
+        margin-left: 10px;
+    }
+}
+
+a.facilities-button i:hover {
+    color: $clr-mustard;
+}
+
+.facilities-number {
+    position: absolute;
+    left: -21%;
+    top: -18px;
+}
+
+.facilities-number.two {
+    position: absolute;
+    left: 111%;
+    top: -18px;
+}
+
+.facilities-number h1 {
+    font-size: 40px;
+    color: $clr-mustard;
+    font-weight: 500;
+}
+
+.facilities-thumb img {
+    height: 450px;
+    object-fit: cover;
+}
+
 /*casino-css-end*/
 
 /*footer-css-start*/
@@ -491,24 +716,24 @@ section.casinosbanner.banner {
     margin-bottom: 2rem;
 }
 
-.input-control {
+.about_us_content .input-control {
     display: block;
     width: 100%;
     height: 4rem;
-    border: 1px solid $clr-black;
+    border: 1px solid $clr-mustard;
     padding: 2rem 2rem;
     background: transparent;
     color: $clr-black;
 }
 
-textarea.input-control {
+.about_us_content textarea.input-control {
     resize: none;
     height: auto;
 }
 
 .form-group .submit-btn {
-    background: transparent;
-    border: 1px solid $clr-black;
+    background: $clr-mustard;
+    border: 1px solid $clr-mustard;
     transition: all 0.2s linear;
     display: inline-block;
     padding: 0.8rem 4rem;
@@ -516,7 +741,8 @@ textarea.input-control {
     text-transform: capitalize;
 
     &:hover {
-        background-color: $clr-black;
+        background-color: $clr-black !important;
+        border: 1px solid $clr-black !important;
     }
 }
 

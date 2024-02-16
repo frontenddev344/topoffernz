@@ -387,6 +387,198 @@ section.casinosbanner.banner::after {
   z-index: -1;
 }
 
+section.Page2 {
+  padding-bottom: 0;
+}
+section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(4),
+section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(5),
+section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(6),
+section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(7),
+section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:nth-child(8),
+section.Page2 .page-wrapper .row .col-sm-12.col-lg-4.col-md-6:last-child {
+  margin-top: 16px;
+}
+section.Page2 .page-wrapper .boxs {
+  height: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #fff;
+  position: relative;
+  padding-bottom: 60px;
+  transition: all 0.3s ease-in-out;
+}
+section.Page2 .page-wrapper .boxs:hover {
+  transform: translateY(-6px);
+}
+section.Page2 .page-wrapper .boxs figure.imgfigure {
+  position: relative;
+}
+section.Page2 .page-wrapper .boxs figure.imgfigure img {
+  height: 274px;
+  object-fit: cover;
+}
+section.Page2 .page-wrapper .boxs figure.imgfigure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(198, 171, 114, 0.5607843137);
+  transform: scale(0);
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+}
+section.Page2 .page-wrapper .boxs figure.imgfigure:hover::after {
+  transform: scale(1);
+}
+section.Page2 .page-wrapper .boxs .page-content-box {
+  padding: 0px 14px 20px;
+}
+section.Page2 .page-wrapper .boxs .page-content-box h3 {
+  color: #ac8a63;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 26px;
+}
+section.Page2 .page-wrapper .boxs .page-content-box h6 {
+  font-size: 20px !important;
+  color: #ac8a63;
+  margin-bottom: 14px;
+}
+section.Page2 .page-wrapper .boxs .page-content-box h6 span {
+  color: #0C0B0B;
+}
+section.Page2 .page-wrapper .boxs .page-content-box .page-btn {
+  position: absolute;
+  bottom: 10px;
+}
+section.Page2 .page-wrapper .boxs .page-content-box .page-btn a {
+  display: inline-block;
+  margin: 10px;
+  background: #ac8a63;
+  color: #fff;
+  padding: 10px 40px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ac8a63;
+  transition: all 0.3s ease-in-out;
+}
+section.Page2 .page-wrapper .boxs .page-content-box .page-btn a:hover {
+  background-color: transparent;
+  border: 1px solid #ac8a63;
+  color: #ac8a63;
+}
+
+.facilities-area .section-title {
+  margin-bottom: 51px;
+}
+
+.facilities-area .luxury-button {
+  text-align: right;
+  margin-top: 0;
+}
+
+.facilities-area .luxury-button:before {
+  right: -295px;
+  background: #0C0B0B;
+}
+
+.facilities-area .luxury-button a {
+  color: #0C0B0B;
+  border: 1px solid #0C0B0B;
+  background: transparent;
+}
+
+.facilities-area .luxury-button a:before {
+  background: #0C0B0B;
+}
+
+.facilities-area .luxury-button a:hover {
+  color: #fff;
+}
+
+.facilities-area .row.add-boder {
+  border-top: 1px solid #ac8a63;
+  padding: 39px 0;
+}
+.facilities-area .row.add-boder:last-of-type {
+  padding-bottom: 0;
+}
+
+.single-facilities-box {
+  position: relative;
+  margin-left: 100px;
+}
+
+.single-facilities-box.two {
+  margin: 0;
+  margin-right: 100px;
+}
+
+.facilities-content h4 {
+  font-size: 24px;
+  line-height: 35px;
+  color: #0C0B0B;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.facilities-content h5 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #ac8a63;
+  font-weight: 600;
+  font-family: "Lora";
+}
+.facilities-content p {
+  position: relative;
+}
+
+a.facilities-button i {
+  display: inline-block;
+  color: #0C0B0B;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+img.rightarrow {
+  width: 40px;
+  transition: 0.3s;
+}
+img.rightarrow:hover {
+  filter: invert(79%) sepia(30%) saturate(531%) hue-rotate(351deg) brightness(78%) contrast(92%);
+  margin-left: 10px;
+}
+
+a.facilities-button i:hover {
+  color: #ac8a63;
+}
+
+.facilities-number {
+  position: absolute;
+  left: -21%;
+  top: -18px;
+}
+
+.facilities-number.two {
+  position: absolute;
+  left: 111%;
+  top: -18px;
+}
+
+.facilities-number h1 {
+  font-size: 40px;
+  color: #ac8a63;
+  font-weight: 500;
+}
+
+.facilities-thumb img {
+  height: 450px;
+  object-fit: cover;
+}
+
 /*casino-css-end*/
 /*footer-css-start*/
 .footer {
@@ -493,24 +685,24 @@ section.casinosbanner.banner::after {
   margin-bottom: 2rem;
 }
 
-.input-control {
+.about_us_content .input-control {
   display: block;
   width: 100%;
   height: 4rem;
-  border: 1px solid #0C0B0B;
+  border: 1px solid #ac8a63;
   padding: 2rem 2rem;
   background: transparent;
   color: #0C0B0B;
 }
 
-textarea.input-control {
+.about_us_content textarea.input-control {
   resize: none;
   height: auto;
 }
 
 .form-group .submit-btn {
-  background: transparent;
-  border: 1px solid #0C0B0B;
+  background: #ac8a63;
+  border: 1px solid #ac8a63;
   transition: all 0.2s linear;
   display: inline-block;
   padding: 0.8rem 4rem;
@@ -518,7 +710,8 @@ textarea.input-control {
   text-transform: capitalize;
 }
 .form-group .submit-btn:hover {
-  background-color: #0C0B0B;
+  background-color: #0C0B0B !important;
+  border: 1px solid #0C0B0B !important;
 }
 
 .input-control:focus-visible {

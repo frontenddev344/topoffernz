@@ -149,6 +149,12 @@
   .beforego-content {
     margin: 12px 0;
   }
+  .single-facilities-box {
+    margin-left: 50px;
+  }
+  .single-facilities-box.two {
+    margin-right: 50px;
+  }
 }
 @media screen and (max-width: 767px) {
   .hotelcontent {
@@ -162,6 +168,12 @@
   }
   .beforego-main {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .single-facilities-box {
+    margin-left: 0;
+  }
+  .single-facilities-box.two {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 575px) {
